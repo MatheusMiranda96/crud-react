@@ -1,4 +1,4 @@
-import './form.css'
+import './Form.css'
 import { useRef } from "react";
 
 const Form = ({ onEdit }) => {
@@ -24,7 +24,7 @@ const Form = ({ onEdit }) => {
             </div>
            
             <div className="input-area">
-                <label>Data de nascimento</label>
+                <label>Data Nascimento</label>
                 <input name="data_nascimento" type="date"/>
             </div>
 
