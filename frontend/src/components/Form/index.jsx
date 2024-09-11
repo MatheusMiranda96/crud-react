@@ -28,6 +28,8 @@ const Form = ({ onEdit }) => {
                 <input name="data_nascimento" type="date"/>
             </div>
 
+            <button type='submit' className='button'>SALVAR</button>
+
         </div>
     )
 }
