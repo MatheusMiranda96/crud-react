@@ -1,13 +1,12 @@
-import express from "express";
-import userRoutes from "./routes/users.js";
-import cors from "cors";
+import express from "express"
+import userRoutes from "./routes/users.js"
+import cors from "cors"
 
-const app = express();  /* CONSTRUÇÃO DA API*/
+const app = express()
 
-app.use(express.json()); /* UTILIZAÇÃO DO MODO JSON PARA POST E PUT */
+app.use(express.json())
+app.use(cors())
 
-app.use(cors()); /* PARA EVITAR CONFLITOS DE ACESSO RODANDO LOCALMENTE */
+app.use("/", userRoutes)
 
-app.use("/", userRoutes);
-
-app.listen(3000); /* APP ESCUTAR PORTA 3000 */
+app.listen(3001)

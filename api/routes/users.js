@@ -1,9 +1,14 @@
 import express from "express";
-import { getUsers } from "../controlles/user.js";
+import { addUser, deleteUser, getUsers, updateUser } from "../controllers/user.js";
 
+const router = express.Router()
 
-const router = express.Router(); /* PARA INDICAR QUE ISSO VAI SER UMA ROTA */
+router.get("/", getUsers)
 
-router.get('/', getUsers);
+router.post("/", addUser)
 
-export default router;
+router.put("/:id", updateUser)
+
+router.delete("/:id", deleteUser)
+
+export default router
