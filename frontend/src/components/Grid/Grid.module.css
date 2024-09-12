@@ -14,3 +14,17 @@
     border-bottom: inset;
     padding-bottom: 5px;
 }
+
+
+@media (max-width: 500px) {
+    .th_fone {
+      display: none;
+    }
+}
+
+.td {
+    padding-top: 15px;
+    width: 40%;
+}
+
+
